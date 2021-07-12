@@ -44,6 +44,13 @@ app.post('/login',function(req,res){
     }
 })
 
+app.get('/messages',function(req,res){
+    console.log("Messages was requested")
+    res.json({
+        success: true,
+        message: "thanks for requesting messages!"
+    })
+})
 app.listen(8000,function(){
     console.log("server is runnning")
 })
